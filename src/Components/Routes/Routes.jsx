@@ -6,7 +6,7 @@ const router = createBrowserRouter(
     [
 
         {
-            path: "/muslim",
+            path: "/",
             element: <SaveLocation/>
         },
     ]
