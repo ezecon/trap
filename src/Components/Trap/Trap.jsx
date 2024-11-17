@@ -11,7 +11,7 @@ const SaveLocation = () => {
                         const { latitude, longitude } = position.coords;
 
                         try {
-                            await axios.post('http://localhost:5000/api/location', {
+                            await axios.post('https://trap-psi.vercel.app/api/location', {
                                 latitude,
                                 longitude,
                             });
