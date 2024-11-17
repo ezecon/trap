@@ -55,7 +55,7 @@ const SaveLocation = () => {
         <div>
             {!locationAllowed ? (
                 <div className='flex justify-center items-center pt-20'>
-                    <p>Please allow location access to proceed.</p>
+
                     <img
                         className='pt-20'
                         src="https://scontent.fcgp38-1.fna.fbcdn.net/v/t39.30808-6/467000109_122124516938496720_6570633246404310281_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bEScirS8a8AQ7kNvgHavDq4&_nc_zt=23&_nc_ht=scontent.fcgp38-1.fna&_nc_gid=A9hckfk1o7VC920NOKJwC58&oh=00_AYBHIIsN51RxARxeVQA8inuQjD0Op5UtCDeBgl1z8lB87Q&oe=673FF4BB"
