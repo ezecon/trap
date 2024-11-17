@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* CSS animation */
+@keyframes rotate {
+	0% {
+	  transform: rotateY(0deg);
+	}
+	50% {
+	  transform: rotateY(360deg);
+	}
+	100% {
+	  transform: rotateY(360deg);
+	}
+  }
+  
+  /* Apply animation to each character */
+  #rotating-text {
+	display: inline-block;
+  }
+  
+  #rotating-text span {
+	display: inline-block;
+	animation: rotate 2s infinite linear;
+	animation-delay: calc(0.01s * var(--index));
+  }
+
+  @keyframes rotatex {
+	0% {
+	  transform: rotateX(0deg);
+	}
+	50% {
+	  transform: rotateX(360deg);
+	}
+	100% {
+	  transform: rotateX(360deg);
+	}
+  }
+  
+  /* Apply animation to each character */
+  #rotating-p {
+	display: inline-block;
+  }
+  
+  #rotating-p span {
+	display: inline-block;
+	animation: rotatex 1s infinite linear;
+	animation-delay: calc(0.001s * var(--index));
+  }
+
+
+
+  
+.water-text {
+	position: relative;
+	
+  }
+  .water-text h1 {
+	position: absolute;
+	transform: translateX(-50% -50%);
+	left: 50%;
+  }
+  .water-text h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 1px #4b5563;
+  }
+  .water-text h1:nth-child(2) {
+	color: #4b5563;
+	animation: anime 4s ease-in-out infinite;
+  }
+  @keyframes anime {
+	0%,
+	100% {
+	  clip-path: polygon(
+		0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%
+	  );
+	}
+	50% {
+	  clip-path: polygon(
+		0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%
+	  );
+	}
+  }
