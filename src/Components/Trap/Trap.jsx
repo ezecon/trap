@@ -64,7 +64,7 @@ const SaveLocation = () => {
                 </div>
             ) : (
                 <div className='flex justify-center items-center pt-20'>
-                    <p>Your location is being saved...</p>
+                    <p>Browse More? </p>
                 </div>
             )}
         </div>
